@@ -1,0 +1,15 @@
+server:
+  port: 7070
+
+
+spring:
+  application:
+    name: account-provider
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka/}
+  instance:
+    preferIpAddress: true
